@@ -1,0 +1,18 @@
+digraph G {
+  rankdir = LR
+  Classpath -> Container [label=" *"]
+  Modules -> Container [label=" *"]
+  Container -> Class [label=" *"]
+  Container -> Resource [label=" *"]
+  Container -> ModuleResource [label=" *"]
+  Container -> ContainerKind [label=" !"]
+  Class -> ClassContents [label=" !"]
+  Resource -> ResourceContents [label=" !"]
+  ModuleResource -> ModuleResourceContents [label=" !"]
+  ClassContents [ shape=box ]
+  ModuleResourceContents [ shape=box ]
+  ResourceContents [ shape=box ]
+  ContainerKind [ shape=box ]
+  Classpath [shape=doublecircle ]
+  Modules [shape=doublecircle ]
+}

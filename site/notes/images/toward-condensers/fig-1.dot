@@ -1,0 +1,10 @@
+digraph G {
+  rankdir = LR
+  Extractor -> "Condenser 1"
+  "Condenser 1" -> "Condenser 2"
+  "Condenser 2" -> Distiller
+  Extractor [shape=box]
+  "Condenser 1" [shape=box]
+  "Condenser 2" [shape=box]
+  Distiller [shape=box]
+}
