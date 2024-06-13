@@ -29,6 +29,11 @@ Design notes
 Presentations
 -------------
 
+  - _Project Leyden: Capturing Lightning in a Bottle_, Per Minborg,<br/>
+    Devoxx&nbsp;UK 2024 ([video](https://youtu.be/teXijm79vno))
+  - _Choose Your Own Performance, a Project Leyden Update_,<br/>Dan
+    Heidinga, DevNexus&nbsp;2024 ([video](https://youtu.be/NZSbZkKO90Y),
+    [slides](slides/leyden-heidinga-devnexus-2024-03.pdf))
   - _Premain Case Study: Spring PetClinic_, Vladimir Ivanov, 2023/9
     ([slides](slides/leyden-premain-petclinic-2023-09-12.pdf))
   - _Project Leyden: Capturing Lightning in a Bottle_, Mark Reinhold,<br/>
