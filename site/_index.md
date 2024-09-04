@@ -29,6 +29,9 @@ Design notes
 Presentations
 -------------
 
+  - _Project Leyden Update_, Ioi Lam, Dan Heidinga,<br/>
+    [JVMLS&nbsp;2024](https://openjdk.org/projects/mlvm/jvmlangsummit/)
+    ([video](https://youtu.be/OOPSU4LnKg0))
   - _Project Leyden: Capturing Lightning in a Bottle_, Per Minborg,<br/>
     Devoxx&nbsp;UK 2024 ([video](https://youtu.be/teXijm79vno))
   - _Choose Your Own Performance, a Project Leyden Update_,<br/>Dan
@@ -38,7 +41,7 @@ Presentations
     ([slides](slides/leyden-premain-petclinic-2023-09-12.pdf))
   - _Project Leyden: Capturing Lightning in a Bottle_, Mark Reinhold,<br/>
     John Rose,
-    [JVMLS&nbsp;2023](https://openjdk.org/projects/mlvm/jvmlangsummit/)
+    [JVMLS&nbsp;2023](https://openjdk.org/projects/mlvm/summit2023/)
     ([video](https://youtu.be/lnth19Kf-x0),
      [slides](slides/leyden-jvmls-2023-08-08.pdf))
 
