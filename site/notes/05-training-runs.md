@@ -1,7 +1,9 @@
 # Thoughts on Training Runs
-<Sept 3, 2024>
 
-# Training Runs
+## Dan Heidinga {.author}
+## 2024/9/3
+
+## Training Runs
 The JVM uses observation to drive optimization.  It records the actions the current program executing is actually doing - which paths are executed, which methods are called, which types are observed - and uses that to optimize the "hot spots" in the program. Many of these optimizations are speculative in that they assume some condition that has held so far in the program will continue to hold true, and generate code for that condition while also providing compensation code to fall back if the condition becomes false.
 
 Training runs are a way of observing what an application is doing across *different runs*.  The same kind of profiling information is recorded in one instance of the application and is preserved for use to optimize a subsequent execution of the program.  This allows the same kind of speculative optimizations the JVM does at runtime to be *shifted* earlier to later executions can be optimized further, providing better startup and warmup of the application.
@@ -10,7 +12,7 @@ Static analysis is an alternative approach which attempts to determine which met
 
 The Leyden project has found training runs to be unreasonably effective at driving startup and warmup optimizations.
 
-# Types of training runs
+## Types of training runs
 There are primarily two types of training runs:
 
 * integration tests - which run at build time
@@ -19,7 +21,7 @@ There are primarily two types of training runs:
 Note, training runs are currently focused on the 3 built-in classloaders and the classes loaded by them.  Changing the classes will require retraining.
 
 
-# The three phases
+## The three phases
 The current Leyden workflow involves three stages:
 
 * *training run* where the application is run while being observed
@@ -32,12 +34,12 @@ By separating the training and assembly phases, we ensure that the assembly phas
 
 This requires that the classes that are loaded and linked in the training run are the *same* classes that are loaded and linked in the assembly phase.  Including any hidden classes generated in response to i.e. Lambda generation by the LambdaMetaFactory.  To ensure that the classes are the same, the VM needs to not only know the class name:class loader relationship, it also needs to know that the class loader will reliably produce the same class for a given name.  Currently, this can only be asserted for the three built-in classloaders: System, Extension, & Boot loaders.  Future work may extend this to other loaders as well.
 
-# Leyden's current approach
+## Leyden's current approach
 Leyden's current approach ensures that the classes used and the training data - such as method profiles - match exactly.  This sidesteps needing heuristics for how applicable the training data is as the class base and observations are from the same run.  Hidden classes, which are generated at runtime, are the most difficult to map in this model as they don't have stable names.  Instead, they can be tracked by knowning the `inputs : generated class` mapping for a given class generator.  This way the training data for a hidden class named i.e. `Foo/0xACD00` from the training run can be applied to the recreated hidden class named `Foo/0xCF00` as we know they were created from the same inputs.
 
 Profiles are from a single training run in the current approach and are not merged.  Future work may investigate alternative ways to capture training data and even alternative patterns.
 
-# Training runs and deployments
+## Training runs and deployments
 There are many ways training runs could be operationalized.  Let's explore a few different options that can be done today or may be supported in the future.  It's important to keep in mind the distinction between training runs and deployments when reading this section.  Many problems that seem like they could, or even should, be solved by training runs are actually better viewed as deployment concerns.
 
 Training runs as stated above should be viewed as fairly simple observations of a workload converted into an artifact (the AOTCache) - how those observations are made at scale and how the artefacts are put in production are more deployment concerns best solved outside the JVM.
