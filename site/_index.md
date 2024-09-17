@@ -19,12 +19,15 @@ href="/groups/core-libs/">Core Libraries</a> Groups. </p>
 Design notes
 ------------
 
+  - [Thoughts on Training Runs](https://openjdk.org/projects/leyden/notes/05-training-runs) (2024/9)
+  - The "Premain" JEPs: [JEP 483: AOT Class Loading & Linking](https://openjdk.org/jeps/483) (2024/8),<br/>
+    [JEP draft: Ahead-of-Time Code Compilation](https://openjdk.org/jeps/8335368)<br/>
+    [JEP draft: Ahead-of-Time Method Profiling](https://openjdk.org/jeps/8325147)
   - [Condensing Indy Bootstraps](notes/04-condensing-bootstraps) (2023/8)
   - [Toward Condensers](notes/03-toward-condensers) (2023/7)
   - [Selectively Shifting and Constraining
     Computation](notes/02-shift-and-constrain) (2022/10)
   - [Project Leyden: Beginnings](notes/01-beginnings) (2022/5)
-
 
 Presentations
 -------------
@@ -52,3 +55,5 @@ Resources
   - Mailing list: [leyden-dev](https://mail.openjdk.org/mailman/listinfo/leyden-dev)
     (you must subscribe to the list in order to post to it)
   - Repository: [openjdk/leyden](https://github.com/openjdk/leyden)
+  - Early access builds: <https://jdk.java.net/leyden/> (including "Premain" work)
+
