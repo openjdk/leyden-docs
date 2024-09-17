@@ -1,7 +1,7 @@
 # Thoughts on Training Runs
 
-## Dan Heidinga {.author}
-## 2024/9/3 {.date}
+#### Dan Heidinga {.author}
+#### 2024/9/3 {.date}
 
 ## Training Runs
 The JVM uses observation to drive optimization.  It records the actions the current program executing is actually doing - which paths are executed, which methods are called, which types are observed - and uses that to optimize the "hot spots" in the program. Many of these optimizations are speculative in that they assume some condition that has held so far in the program will continue to hold true, and generate code for that condition while also providing compensation code to fall back if the condition becomes false.
