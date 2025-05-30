@@ -16,16 +16,26 @@ href="/groups/hotspot/">HotSpot</a> and <a
 href="/groups/core-libs/">Core Libraries</a> Groups. </p>
 
 
-JEPs
-----
+JEP status
+----------
 
-  - [JEP 483: Ahead-of-Time Class Loading & Linking](https://openjdk.org/jeps/483)
-  - [JEP draft: Ahead-of-Time Code Compilation](https://openjdk.org/jeps/8335368)
-  - [JEP draft: Ahead-of-Time Method Profiling](https://openjdk.org/jeps/8325147)
+In progress:
+
+  - [516: Ahead-of-Time Object Caching with Any GC](https://openjdk.org/jeps/516)
+  - [TBD: Ahead-of-Time Code Compilation](https://openjdk.org/jeps/8335368)
+
+Delivered:
+
+  - [483: Ahead-of-Time Class Loading & Linking](https://openjdk.org/jeps/483) ([JDK&nbsp;24])
+  - [514: Ahead-of-Time Command-Line Ergonomics](https://openjdk.org/jeps/514) ([JDK&nbsp;25])
+  - [515: Ahead-of-Time Method Profiling](https://openjdk.org/jeps/515) ([JDK&nbsp;25])
+
+[JDK&nbsp;24]: https://jdk.java.net/24
+[JDK&nbsp;25]: https://jdk.java.net/25
 
 
-Implementation
---------------
+Development
+-----------
 
 Development takes place in our OpenJDK GitHub repository,
 [openjdk/leyden].  Most of our current work is in the [premain] branch.
@@ -33,7 +43,6 @@ From that branch we occasionally publish early-access builds at
 [jdk.java.net/leyden], along with [release notes].  Please try out the
 builds and let us know what you think!  You can send feedback to the
 [leyden-dev] mailing list (subscribe to the list before posting).
-
 
 [openjdk/leyden]: https://github.com/openjdk/leyden
 [premain]: https://github.com/openjdk/leyden/tree/premain
@@ -57,6 +66,9 @@ Presentations
 -------------
 
   <!-- The <br/> elements are intentional; please do not delete them. -->
+
+  - _Project Leyden: Improving Java’s Startup Time_<br/>
+    Per Minborg, Sébastien Deleuze, Devoxx BE 2024 ([video](https://youtu.be/78HV0MRtfiw))
 
   - _Project Leyden Update_<br/>Ioi Lam, Dan Heidinga,
     [JVMLS&nbsp;2024](https://openjdk.org/projects/mlvm/jvmlangsummit/)
