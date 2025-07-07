@@ -67,6 +67,9 @@ Presentations
 
   <!-- The <br/> elements are intentional; please do not delete them. -->
 
+  - _Project Leyden’s AOT: Shifting Startup into High Gear_<br/>
+    Dan Heidinga, JavaOne 2025 ([video](https://youtu.be/Oo96adJirPw))
+
   - _Project Leyden: Improving Java’s Startup Time_<br/>
     Per Minborg, Sébastien Deleuze, Devoxx BE 2024 ([video](https://youtu.be/78HV0MRtfiw))
 
