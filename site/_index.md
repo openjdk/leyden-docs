@@ -21,7 +21,6 @@ JEP status
 
 In progress:
 
-  - [516: Ahead-of-Time Object Caching with Any GC](https://openjdk.org/jeps/516)
   - [TBD: Ahead-of-Time Code Compilation](https://openjdk.org/jeps/8335368)
 
 Delivered:
@@ -29,9 +28,11 @@ Delivered:
   - [483: Ahead-of-Time Class Loading & Linking](https://openjdk.org/jeps/483) ([JDK&nbsp;24])
   - [514: Ahead-of-Time Command-Line Ergonomics](https://openjdk.org/jeps/514) ([JDK&nbsp;25])
   - [515: Ahead-of-Time Method Profiling](https://openjdk.org/jeps/515) ([JDK&nbsp;25])
+  - [516: Ahead-of-Time Object Caching with Any GC](https://openjdk.org/jeps/516) ([JDK&nbsp;26])
 
 [JDK&nbsp;24]: https://jdk.java.net/24
 [JDK&nbsp;25]: https://jdk.java.net/25
+[JDK&nbsp;26]: https://jdk.java.net/26
 
 
 Development
