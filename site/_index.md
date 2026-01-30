@@ -67,6 +67,9 @@ Presentations
 
   <!-- The <br/> elements are intentional; please do not delete them. -->
 
+  - _Ahead of time, the final frontier_<br/>
+    María Arias de Reyna, Andrew Dinn JChampions Conference 2026 ([video](https://www.youtube.com/watch?v=BK1vZQYZofs))
+
   - _Project Leyden’s AOT: Shifting Startup into High Gear_<br/>
     Dan Heidinga, JavaOne 2025 ([video](https://youtu.be/Oo96adJirPw))
 
