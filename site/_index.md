@@ -21,7 +21,7 @@ JEP status
 
 In progress:
 
-  - [TBD: Ahead-of-Time Code Compilation](https://openjdk.org/jeps/8335368)
+  - [544: Ahead-of-Time Code Compilation](https://openjdk.org/jeps/544) ([JDK&nbsp;28])
 
 Delivered:
 
@@ -33,20 +33,21 @@ Delivered:
 [JDK&nbsp;24]: https://jdk.java.net/24
 [JDK&nbsp;25]: https://jdk.java.net/25
 [JDK&nbsp;26]: https://jdk.java.net/26
+[JDK&nbsp;28]: https://jdk.java.net/28
 
 
 Development
 -----------
 
 Development takes place in our OpenJDK GitHub repository,
-[openjdk/leyden].  Most of our current work is in the [premain] branch.
+[openjdk/leyden].  Most of our current work is in the [premain2] branch.
 From that branch we occasionally publish early-access builds at
 [jdk.java.net/leyden], along with [release notes].  Please try out the
 builds and let us know what you think!  You can send feedback to the
 [leyden-dev] mailing list (subscribe to the list before posting).
 
 [openjdk/leyden]: https://github.com/openjdk/leyden
-[premain]: https://github.com/openjdk/leyden/tree/premain
+[premain2]: https://github.com/openjdk/leyden/tree/premain2
 [jdk.java.net/leyden]: https://jdk.java.net/leyden
 [release notes]: https://github.com/openjdk/leyden/blob/leyden-ea1-release-notes/README.md
 [leyden-dev]: https://mail.openjdk.org/mailman/listinfo/leyden-dev
